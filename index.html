@@ -25,35 +25,31 @@
             </div>
             <img src="./assets/Trustco..svg" class="logoimg"/>  <!-- changed class from logoimg1 to logoimg -->
         </div>
-        <nav >
-            <ul class="list-items">
-           <li class="list-data">
-           <a>Features</a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
 
-           </li>
-           <li class="list-data">
-            <a>Solutions</a>
-           </li>
-           <li class="list-data">
-            <a>Company</a>
-            
-           </li>
-           <li class="list-data">
-            <a>Resources</a>
-            
-           </li>
-           <li class="list-data">
-            <a>
-                Contact</a>
-            
-           </li>
+        <nav class="nav-menu">
+            <ul class="list-items">
+                <li class="list-data"><a>Features</a></li>
+                <li class="list-data"><a>Solutions</a></li>
+                <li class="list-data"><a>Company</a></li>
+                <li class="list-data"><a>Resources</a></li>
+                <li class="list-data"><a>Contact</a></li>
             </ul>
-           
-            </nav>
-            <div class="btns">
+            <!-- Mobile buttons -->
+            <div class="mobile-btns">
                 <button class="logbtn">Login</button>
                 <button class="signbtn">Sign up</button>
-
+            </div>
+        </nav>
+        <!-- Desktop/Laptop buttons -->
+        <div class="btns desktop-btns">
+            <button class="logbtn">Login</button>
+            <button class="signbtn">Sign up</button>
+        </div>
             </div>
 
     </div>
@@ -68,7 +64,31 @@
     <p>Footer links and additional information placeholder</p>
 </footer>
 </body>
-<footer>
+<!-- Add before closing body tag -->
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
 </footer>
 </html>
