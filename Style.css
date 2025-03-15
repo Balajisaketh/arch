@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.0rem 2.5rem;  /* increased from 0.8rem 2rem */
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-sub {
+    display: flex;
+    line-height: 0;
+    transform: rotate(6deg);
+    gap: -40px;  /* increased negative gap to bring stripes even closer */
+}
+
+.stripe {
+    display: block;
+    line-height: 0;
+    margin-right: -3px;  /* increased negative margin for tighter spacing */
+}
+
+.stripe-1 img {
+    height: 25px;
+    width: 20px;
+}
+
+.stripe-2 img {
+    height: 25px;
+    width: 40px;
+}
+
+.stripe-3 img {
+    height: 25px;
+    width: 80px;
+}
+
+.logoimg1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Specific width adjustments for each stripe */
+.logo-sub img:nth-child(1) {
+    width: 20px;
+}
+
+.logo-sub img:nth-child(2) {
+    width: 25px;
+    padding: 0%;
+}
+
+.logo-sub img:nth-child(3) {
+    width: 20px;
+}
+
+.logoimg {
+    height: 24px;
+    align-items: center;
+    width: auto;
+    margin-top: 8px;
+    /* margin-left: 4px; */
+}
+
+.logoimg2 {
+    width: 16px;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.list-items {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-data {
+    padding: 0;
+    color: #4A5568;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.list-data a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #043A53;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.list-data a:hover {
+    color: #065d84;  /* slightly lighter shade for hover */
+}
+
+.list-data a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #043A53;
+    transition: width 0.3s ease;
+}
+
+.list-data a:hover::after {
+    width: 100%;
+}
+
+.btns {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.logbtn {
+    padding: 0.7rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background: white;
+    color: #4A5568;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.logbtn:hover {
+    background: #043A53;
+    color: white;
+    border-color: #043A53;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(4, 58, 83, 0.2);
+}
+
+.signbtn {
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #003553;
+    border-radius: 25px;
+    background-color: #003553;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.signbtn:hover {
+    background-color: white;
+    color: #003553;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(4, 58, 83, 0.2);
+}
