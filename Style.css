@@ -2136,7 +2136,28 @@ body {
     }
 
     .cta-button {
-        width: 100%;
+        width: 90%;
         justify-content: center;
+    }
+    .cta-content{
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .cta-section {
+        padding: 4rem 0;
+    }
+
+    .cta-title {
+        font-size: 36px;
+    }
+
+    .cta-button {
+        width: 40%;
+        justify-content: center;
+    }
+    .cta-content{
+        order: -1;
     }
 }
