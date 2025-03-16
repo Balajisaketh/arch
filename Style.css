@@ -1099,7 +1099,7 @@ body {
 @media screen and (max-width: 576px) {
     .bridges-section {
         padding: 6rem 0;
-        order: 2;
+        order: -1;
     }
 
     .bridges-title {
@@ -1154,6 +1154,7 @@ body {
 
     /* Add after the beneficial section styles */
     .bridges-section {
+        order: -1 !important;
         padding: 8rem 0;
         background-color: #ffffff;
         overflow: hidden;
@@ -1293,6 +1294,7 @@ body {
     
     @media screen and (max-width: 576px) {
         .bridges-section {
+            order: -1 !important;
             padding: 6rem 0;
         }
     
@@ -1357,7 +1359,16 @@ body {
     }
     
     @media screen and (max-width: 576px) {
+        
         .bridges-section {
+            order: 1;
+        }
+        
+        .statistics-section {
+            order: 2;
+        }
+        .bridges-section {
+            /* order: -1 !important; */
             padding: 6rem 0;
         }
     
@@ -1384,6 +1395,20 @@ body {
 /* nmber section */
 
 /* numbers section */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Update existing sections */
+.bridges-section {
+    order: 2;
+}
+
+.statistics-section {
+    order: 1;
+}
+
 .statistics-section {
     padding: 6rem 0;
     background-color: #ffffff;
