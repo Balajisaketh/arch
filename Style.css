@@ -1379,3 +1379,69 @@ body {
         }
     }
 }
+/* nmber section */
+
+/* numbers section */
+.statistics-section {
+    padding: 6rem 0;
+    background-color: #ffffff;
+}
+
+.statistics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-box {
+    padding: 1rem;
+}
+
+.stat-number {
+    /* font-family: 'Inter', sans-serif;
+     */
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #043A53;
+    margin-bottom: 12px;
+}
+
+.stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    /* font-family: "Lato", sans-serif; */
+    font-weight: 700;
+    font-style: normal;
+    color: #4A5568;
+    /* font-weight: bold;
+
+     */
+}
+
+/* Special styling for first stat item */
+.stat-item:first-child .stat-box {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+/* Size label under first stat */
+.stat-item:first-child::after {
+    content: "";
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #0EA5E9;
+    margin-top: 8px;
+}
