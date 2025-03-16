@@ -773,7 +773,7 @@ body {
         line-height: 1.5;
     }
 }
-
+/* bridges-image */
 @media screen and (max-width: 768px) {
     .beneficial-desc {
         max-width: 100%;
