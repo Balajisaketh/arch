@@ -1300,6 +1300,7 @@ body {
     
         .bridges-title {
             font-size: 36px;
+
         }
     
         .bridges-badge {
@@ -1485,6 +1486,9 @@ body {
 
     .stat-number {
         font-size: 42px;
+    }
+    .bridges-title{
+        line-height: 4rem !important;
     }
 
     .stat-label {
