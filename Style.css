@@ -1099,6 +1099,7 @@ body {
 @media screen and (max-width: 576px) {
     .bridges-section {
         padding: 6rem 0;
+        order: 2;
     }
 
     .bridges-title {
@@ -1119,6 +1120,7 @@ body {
     .award-text, .award-year {
         font-size: 12px;
     }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1390,58 +1392,101 @@ body {
 .statistics-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
 .stat-item {
     text-align: center;
-    flex: 1;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .stat-box {
-    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .stat-number {
-    /* font-family: 'Inter', sans-serif;
-     */
     font-size: 56px;
     font-weight: 700;
     font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     color: #043A53;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .stat-label {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    /* font-family: "Lato", sans-serif; */
     font-weight: 700;
-    font-style: normal;
     color: #4A5568;
-    /* font-weight: bold;
-
-     */
 }
 
-/* Special styling for first stat item */
 .stat-item:first-child .stat-box {
     border: 1px solid #E2E8F0;
     border-radius: 8px;
-    padding: 2rem;
 }
 
-/* Size label under first stat */
-.stat-item:first-child::after {
-    content: "";
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #0EA5E9;
-    margin-top: 8px;
+@media screen and (max-width: 768px) {
+    
+.statistics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+    .stat-item {
+        min-height: 140px;
+    }
+
+    .stat-box {
+        padding: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 42px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+.statistics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+    .stat-item {
+        min-height: 120px;
+    }
+
+    .stat-box {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
 }
