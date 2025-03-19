@@ -84,6 +84,7 @@ body {
     transform: scale(1.1);
 }
 
+
 /* Tablet Styles */
 
 /* ... existing code ... */
@@ -888,7 +889,7 @@ body {
 .content-wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 1rem;
     position: relative;
     display: flex;
     justify-content: space-evenly;
