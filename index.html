@@ -57,41 +57,8 @@
 <main class="container">
     <h2>Responsive Design Boilerplate</h2>
     <p>This is a simple responsive design layout.</p>
-    <p>Placeholder content for the main section.</p>
-</main>
-<footer>
-    <p>&copy; 2025 My Website. All rights reserved.</p>
-    <p>Footer links and additional information placeholder</p>
-</footer>
-</body>
-<!-- Add before closing body tag -->
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-</script>
-</footer>
-</html>
+    <p>Placeholder content for the main section.</p>\
+    
 <section class="trusted-section">
     <div class="trusted-container">
         <h3 class="trusted-text">Trusted by the best in the world</h3>
@@ -246,6 +213,40 @@
         </div>
     </div>
 </section>
+</main>
+<footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+    <p>Footer links and additional information placeholder</p>
+</footer>
+</body>
+<!-- Add before closing body tag -->
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
+</footer>
+</html>
 </div>
 
  
