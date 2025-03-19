@@ -376,7 +376,7 @@ body {
 @media screen and (min-width: 769px) {
     .trusted-container {
         display: flex;
-        
+
         align-items: center;
         justify-content: space-between;
     }
@@ -474,22 +474,27 @@ body {
 
 /* Desktop layout */
 @media screen and (min-width: 769px) {
+    .trusted-section{
+        overflow: hidden;
+    }
     .trusted-container {
         display: flex;
-        d
+        width: auto;
+        /* background-color: aqua; */
         align-items: center;
         justify-content: space-between;
     }
 
     .trusted-text {
         margin-bottom: 0;
-        white-space: nowrap;
-        margin-right: 3rem;
+        white-space: wrap;
+        margin-right: 2px
+        
     }
 
     .trusted-logos {
         flex: 1;
-        justify-content: space-between;
+        justify-content: space-evenly
     }
 }
 
