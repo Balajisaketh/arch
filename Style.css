@@ -869,7 +869,7 @@ body {
 
 .benefit-card {
     background-color: #F8F9FA;
-    padding: 2.5rem;
+    padding: 1rem;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
@@ -1249,7 +1249,7 @@ body {
 
     .beneficial-tag {
         display: inline-block;
-        overflow:  !important;
+        overflow: hidden !important;
         padding: 8px 10px;
         background-color: #043A53;
         color: #ffffff;
@@ -1884,3 +1884,4 @@ body {
     .stat-label {
         font-size: 14px;
     }
+}
