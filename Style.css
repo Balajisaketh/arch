@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 .footer-container {
     width: 100%;
@@ -80,5 +85,32 @@
     .footer-links {
         flex-direction: column;
         gap: 0.75rem;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1440px) {
+    body{
+        margin: 0.1px !important;
+    }
+    .main-footer {
+        background-color: #f2f5f6;
+        width: 100%;
+        min-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-content {
+        padding: 1rem 0.2rem;
+        /* background-color: red !important; */
+    }
+
+    .footer-link {
+        /* margin: 0 1rem; */
+        font-size: 13px;
+    }
+
+    
+
+    .copyright {
+        font-size: 13px;
     }
 }
