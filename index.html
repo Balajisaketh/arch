@@ -5,66 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrustCo</title>
     <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
     <header>
-    <div class="header-section">
-        <div class="logo">
-            <div class="logo-sub">
-                <span class="stripe stripe-1">
-                    <img src="./assets/Vector.png" class="logoimg1" style="opacity: 0.15;"/>
-                </span>
-                <span class="stripe stripe-2">
-                    <img src="./assets/Vector (1).png" class="logoimg1" style="opacity: 0.4;"/>
-                </span>
-                <span class="stripe stripe-3">
-                    <img src="./assets/Vector (3).png" class="logoimg1" style="opacity: 1;"/>
-                </span>
+        <div class="header-section">
+            <div class="logo">
+                <div class="logo-sub">
+                    <span class="stripe stripe-1">
+                        <img src="./assets/Vector.png" class="logoimg1" style="opacity: 0.15;"/>
+                    </span>
+                    <span class="stripe stripe-2">
+                        <img src="./assets/Vector (1).png" class="logoimg1" style="opacity: 0.4;"/>
+                    </span>
+                    <span class="stripe stripe-3">
+                        <img src="./assets/Vector (3).png" class="logoimg1" style="opacity: 1;"/>
+                    </span>
+                </div>
+                <img src="./assets/Trustco..svg" class="logoimg"/>  <!-- changed class from logoimg1 to logoimg -->
             </div>
-            <img src="./assets/Trustco..svg" class="logoimg"/>  <!-- changed class from logoimg1 to logoimg -->
-        </div>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <nav class="nav-menu">
-            <ul class="list-items">
-                <li class="list-data"><a>Features</a></li>
-                <li class="list-data"><a>Solutions</a></li>
-                <li class="list-data"><a>Company</a></li>
-                <li class="list-data"><a>Resources</a></li>
-                <li class="list-data"><a>Contact</a></li>
-            </ul>
-            <!-- Mobile buttons -->
-            <div class="mobile-btns">
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <nav class="nav-menu">
+                <ul class="list-items">
+                    <li class="list-data"><a>Features</a></li>
+                    <li class="list-data"><a>Solutions</a></li>
+                    <li class="list-data"><a>Company</a></li>
+                    <li class="list-data"><a>Resources</a></li>
+                    <li class="list-data"><a>Contact</a></li>
+                </ul>
+                <!-- Mobile buttons -->
+                <div class="mobile-btns">
+                    <button class="logbtn">Login</button>
+                    <button class="signbtn">Sign up</button>
+                </div>
+            </nav>
+            <!-- Desktop/Laptop buttons -->
+            <div class="btns desktop-btns">
                 <button class="logbtn">Login</button>
                 <button class="signbtn">Sign up</button>
             </div>
-        </nav>
-        <!-- Desktop/Laptop buttons -->
-        <div class="btns desktop-btns">
-            <button class="logbtn">Login</button>
-            <button class="signbtn">Sign up</button>
+                </div>
+    
         </div>
+    </header>
+<main class="container">
+    <section class="primary-section">
+
+        <div class="content-wrapper">
+
+            <div class="floating-left">
+                <div class="profile-oval">
+                    <img src="assets/Hero 5.png" 
+                     alt="Profile" 
+                     class="img1">
+                </div>
+               
             </div>
 
-    </div>
-</header>
-<main class="container">
-    <h2>Responsive Design Boilerplate</h2>
-    <p>This is a simple responsive design layout.</p>
-    <p>Placeholder content for the main section.</p>
+            <div class="text-content">
+                <h1 class="main-title">Find a High-Potential Customers with <span class="highlight">Trustco.</span></h1>
+                <p class="subtitle">We provide sales teams and professionals with the knowledge, skill and discipline they need to be 10x more successful.</p>
+                <div class="action-buttons">
+                    <button class="primary-btn">Get Started</button>
+                    <button class="secondary-btn">
+                        <div class="play-icon">
+                            <img src="./assets/Play.png"/>
+                            
+                        </div>
+                        Check Our Video
+                    </button>
+                </div>
+            </div>
+
+            <div class="floating-right">
+                <div class="social-circle instagram">
+                    <img src="assets/Hero 6.png" alt="Instagram" class="img1">
+                </div>
+               
+            </div>
+        </div>
+    </section>
 </main>
-<footer>
-    <p>&copy; 2025 My Website. All rights reserved.</p>
-    <p>Footer links and additional information placeholder</p>
-</footer>
-</body>
-<!-- Add before closing body tag -->
+
 <script>
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -90,5 +119,7 @@
         });
     });
 </script>
-</footer>
+</body>
+<!-- Add before closing body tag -->
+
 </html>
