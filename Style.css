@@ -66,7 +66,20 @@ body {
     height: auto;
     border-radius: 24px;
 }
-
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    color: #1A202C;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 .play-button {
     position: absolute;
     top: 50%;
@@ -74,12 +87,26 @@ body {
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
-
 .play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    /* background: #FFB800; */
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.play-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+/* .play-icon {
     width: 80px;
     height: 80px;
     transition: transform 0.3s ease;
-}
+} */
 
 .play-button:hover .play-icon {
     transform: scale(1.1);
@@ -121,7 +148,15 @@ body {
         text-align: center;
         margin: 0.5rem auto 0;
     }
-
+    .play-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .play-icon img {
+        width: 18px;
+        height: 18px;
+    }
     .hero-text {
         text-align: center;
         margin: 1.5rem auto 0;
@@ -1544,6 +1579,7 @@ body {
 
 .primary-section {
     /* padding-top: 1rem; */
+    padding-bottom: 4rem;
     margin-top:1px;
     position: relative;
     overflow: hidden;
@@ -1557,13 +1593,13 @@ body {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .floating-left, .floating-right {
     position: relative;
     flex: 1;
-    height: 800px;
+    height: 500px;
 }
 
 .text-content {
@@ -1577,11 +1613,11 @@ body {
 
 .profile-oval {
     position: absolute;
-    padding-top: 40%;
+    /* padding-top: 10%; */
     width: 80%;
-    height: 60vh;
+    height: auto;
     overflow: hidden;
-    top: 15%;
+    /* top: -2%; */
     object-fit: cover;
 }
 
@@ -1591,12 +1627,12 @@ body {
 }
 
 .floating-left .profile-oval {
-    top: 20%;
+    top: 10%;
     left: 15%;
 }
 
 .floating-right .profile-oval {
-    top: 35%;
+    top: 10%;
     right: 15%;
 }
 
@@ -1604,7 +1640,7 @@ body {
     position: absolute;
     width: 80%;
     height: 60vh;
-    top: 35%;
+    top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
