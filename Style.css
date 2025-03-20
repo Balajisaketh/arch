@@ -3250,7 +3250,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
     .footer-content {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         padding: 1.5rem;
         text-align: center;
